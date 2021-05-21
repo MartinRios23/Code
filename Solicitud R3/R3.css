@@ -1,73 +1,73 @@
 /*Importe de fuente Montserrat*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap");
 
-.container{
-    /*Propiedad Flex para ordenar el contenido de este div y margen entre div y body*/
-    display: flex;
-    width: 80%;
-    margin: 20px auto;
+.container {
+  /*Propiedad Flex para ordenar el contenido de este div y margen entre div y body*/
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
 }
 
 .container > div {
-    /*Tamaño del contenido escrito y margen entre video y texto*/
-    width: 50%;
-    margin: 20px 50px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
+  /*Tamaño del contenido escrito y margen entre video y texto*/
+  width: 50%;
+  margin: 20px 50px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
 }
 
 .video {
-    /*Tamaño del video*/
-    max-width: 600px;
+  /*Tamaño del video*/
+  max-width: 600px;
+}
+
+.BotonIr {
+  /*Estilos para los botones*/
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 8px 40px;
+  border-radius: 10px;
+  background-color: white;
+  transition: all 0.2s;
+  border: 2px solid orange;
+  outline: none;
+}
+
+/*Selector de la clase*/
+.BotonIr:hover {
+  /*Estilos al momento de pasar el mouse por encima del bóton*/
+  background-color: orange;
+  color: white;
+}
+
+a {
+  /*Quitamos la decoración que haya dentro de las "a" del HTML*/
+  text-decoration: none;
+}
+
+.Botones {
+  /*Posición de los botones,*/
+  width: fit-content;
+  margin: 50px auto;
 }
 
 /* Uso de media query para diseñar el responsive*/
 /*Hasta 1200px se ejecuta todo este css según la pantalla donde se ejecute el HTML*/
 @media (max-width: 1200px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .video {
-        width: 100%;
-        margin: 0px auto;
-    }
+  .video {
+    width: 100%;
+    margin: 0px auto;
+  }
 
-    .container > div {
-        width: 100%;
-        margin: 0px;
-        text-align: center;
-    }
+  .container > div {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+  }
 }
-
-.BotonIr {
-    /*Estilos para los botones*/
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    padding: 8px 40px;
-    border-radius: 10px;
-    background-color: white;
-    transition: all 0.2s;
-    border: 2px solid orange;
-    outline: none;
-  }
-
-    
-  .BotonIr:hover {
-    /*Estilos al momento de pasar el mouse por encima del bóton*/
-    background-color: orange;
-    color: white;
-  }
-
-  a{
-    /*Quitamos la decoración que haya dentro de las "a" del HTML*/
-    text-decoration: none;
-  }
-
-  .Botones{
-    /*Posición de los botones,*/
-    width: fit-content;
-    margin: 50px auto;
-  }
