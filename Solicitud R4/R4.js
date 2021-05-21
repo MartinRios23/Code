@@ -31,7 +31,7 @@ async function generarTabla() {
     tabla.appendChild(fila);
   });
 
-  /*Con esta propiedad, desactivamos el botón para no poder volver a crear una duplicada*/
+  /*Con esta propiedad, desactivamos el botón para no poder volver a crear una tabla duplicada*/
   var boton = document.getElementById("botonTabla");
   boton.setAttribute("disabled", true);
 }
