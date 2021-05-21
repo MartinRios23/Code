@@ -1,0 +1,78 @@
+body {
+  /*Hacemos que el contenido del body sea flexible, que ordene todo por columnas y 
+  que todos los items queden centrados*/
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+table {
+  /*Fuente, unión de bordes, ancho de tabla y ubicación de la tabla*/
+  font-family: "Montserrat", sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin: 10px auto;
+}
+
+td {
+  /*Bordes de las celdas, alineación del texto, márgen*/
+  border: 2px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/*Selector de la etiqueda*/
+tr:nth-child(even) {
+  /*Color de background para las filas pares*/
+  background-color: #dddddd;
+}
+
+.header > td {
+  /*Color negrita para la primer fila de la tabla*/
+  font-weight: 600;
+}
+
+.Boton {
+  /*Estilos para los botones*/
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 8px 40px;
+  border-radius: 10px;
+  background-color: white;
+  transition: all 0.2s;
+  border: 2px solid orange;
+  outline: none;
+}
+
+.Boton:hover {
+  /*Estilos al momento de pasar el mouse por encima del bóton*/
+  background-color: orange;
+  color: white;
+}
+
+a {
+  /*Quitamos la decoración que haya dentro de las "a" del HTML*/
+  text-decoration: none;
+}
+
+.Botones {
+  /*Posición de los botones en su DIV*/
+  width: fit-content;
+  margin: 50px auto;
+}
+
+/* Uso de media query para diseñar el responsive*/
+/*Hasta una pantalla de 550 pixeles de ancho se aplican los siguientes estilos*/
+@media (max-width: 550px){
+  td {
+    padding: 0px;
+    border: 1px solid lightgray;
+  }
+  table{
+    margin: 10px 0px,;
+    font-size: 13px;
+  }
+}
+

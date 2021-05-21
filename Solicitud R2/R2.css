@@ -1,0 +1,54 @@
+table {
+    /*Fuente, unión de bordes, ancho de tabla y ubicación de la tabla*/
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+    margin: 10px auto;
+  }
+  
+  td {
+    /*Bordes de las celdas, alineación del texto, márgen*/
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    /*Color de background para las filas pares*/
+    background-color: #dddddd;
+  }
+  
+  .header > td{
+    /*Color negrita para la primer fila de la tabla*/
+    font-weight: 600;
+  }
+
+  .BotonIr {
+    /*Estilos para los botones*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 8px 40px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.2s;
+    border: 2px solid orange;
+    outline: none;
+  }
+
+    
+  .BotonIr:hover {
+    /*Estilos al momento de pasar el mouse por encima del bóton*/
+    background-color: orange;
+    color: white;
+  }
+
+  a{
+    /*Quitamos la decoración que haya dentro de las "a" del HTML*/
+    text-decoration: none;
+  }
+
+  .Botones{
+    /*Posición de los botones,*/
+    width: fit-content;
+    margin: 15px auto;
+  }
