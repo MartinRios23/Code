@@ -13,7 +13,6 @@ td {
   padding: 8px;
 }
 
-/*Selector de la etiqueta*/
 tr:nth-child(even) {
   /*Color de background para las filas pares*/
   background-color: #dddddd;
@@ -36,7 +35,6 @@ tr:nth-child(even) {
   outline: none;
 }
 
-/*Selector de la clase*/
 .BotonIr:hover {
   /*Estilos al momento de pasar el mouse por encima del bóton*/
   background-color: orange;

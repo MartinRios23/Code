@@ -1,6 +1,3 @@
-/*Importe de fuente Montserrat*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;600&display=swap");
-
 .container {
   /*Propiedad Flex para ordenar el contenido de este div y margen entre div y body*/
   display: flex;
@@ -33,7 +30,6 @@
   outline: none;
 }
 
-/*Selector de la clase*/
 .BotonIr:hover {
   /*Estilos al momento de pasar el mouse por encima del bóton*/
   background-color: orange;
@@ -51,8 +47,7 @@ a {
   margin: 50px auto;
 }
 
-/* Uso de media query para diseñar el responsive*/
-/*Hasta 1200px se ejecuta todo este css según la pantalla donde se ejecute el HTML*/
+/* Uso de media query para diseñar el responsive. Hasta 1200px se ejecuta todo este css según la pantalla donde se ejecute el HTML*/
 @media (max-width: 1200px) {
   .container {
     display: flex;
